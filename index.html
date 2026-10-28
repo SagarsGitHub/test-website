@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A small portfolio starter built with HTML, CSS, and JavaScript. Make it your own."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>Alex Morgan — Creative developer</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header container">
+      <a class="brand" href="#home" aria-label="Alex Morgan, home"
+        >am<span aria-hidden="true">.</span></a
+      >
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" hidden aria-pressed="false">
+          Dark theme
+        </button>
+        <button
+          class="menu-toggle"
+          type="button"
+          hidden
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+      </div>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> AVAILABLE FOR
+            COLLABORATION
+          </p>
+          <h1 id="hero-title">
+            Thoughtful design.<br /><em>Useful things.</em>
+          </h1>
+          <p class="hero-copy">
+            I’m Alex, a creative developer turning everyday ideas into clear,
+            approachable digital experiences.
+          </p>
+          <a class="button" href="#work"
+            >Explore my work <span aria-hidden="true">↘</span></a
+          >
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="art-label">IDEA → EXPERIMENT → CREATE</span>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <span class="art-caption">Always a work in progress.</span>
+        </div>
+      </section>
+      <section
+        class="work container section"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading">
+          <h2 id="work-title">Selected work</h2>
+          <span class="eyebrow">01 — 03 / EXPLORATIONS</span>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-art art-notes" aria-hidden="true">
+              <div class="note">
+                <span>Little notes</span
+                ><strong>Make room<br />for ideas.</strong><i></i><i></i>
+              </div>
+            </div>
+            <p class="project-meta">01 / WEB DESIGN</p>
+            <h3>Little notes</h3>
+            <p>A calm space to collect thoughts and find your next idea.</p>
+          </article>
+          <article class="project">
+            <div class="project-art art-studio" aria-hidden="true">
+              <div class="studio-shape"></div>
+              <span>FORM<br />& FEEL</span>
+            </div>
+            <p class="project-meta">02 / VISUAL EXPLORATION</p>
+            <h3>Form & feel</h3>
+            <p>A study in color, balance, and the shapes around us.</p>
+          </article>
+          <article class="project">
+            <div class="project-art art-trails" aria-hidden="true">
+              <div class="hill hill-back"></div>
+              <div class="hill hill-front"></div>
+              <span>Take the<br />scenic route.</span>
+            </div>
+            <p class="project-meta">03 / WEBSITE CONCEPT</p>
+            <h3>Open trails</h3>
+            <p>
+              A little inspiration to step outside and explore somewhere new.
+            </p>
+          </article>
+        </div>
+        <p class="demo-note">
+          Sample projects for this template. Replace them with your own work.
+        </p>
+      </section>
+      <section
+        class="about container section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <div>
+          <h2 id="about-title">Curiosity is part<br />of the process.</h2>
+          <p>
+            I like understanding how things work, then making them a little
+            simpler. My practice brings together design, code, and a willingness
+            to try something new.
+          </p>
+          <ul class="skills" aria-label="Skills">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive design</li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="contact container section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">HAVE SOMETHING IN MIND?</p>
+        <h2 id="contact-title">Let’s make it happen<span>.</span></h2>
+        <a class="contact-link" href="mailto:hello@example.com"
+          >hello@example.com <span aria-hidden="true">↗</span></a
+        >
+        <p class="demo-note">
+          Example address — replace it before sharing your portfolio.
+        </p>
+      </section>
+    </main>
+    <footer class="container">
+      <p>© <span id="year">2026</span> Alex Morgan</p>
+      <a href="#home">Back to top ↑</a>
+      <p>Made with curiosity.</p>
+    </footer>
+  </body>
+</html>
